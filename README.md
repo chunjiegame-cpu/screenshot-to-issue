@@ -8,6 +8,10 @@ Create a GitHub-ready issue draft from a screenshot. The output includes image m
 
 This is meant for the moment after you capture a UI bug and before the details evaporate. It does not upload images or call the GitHub API; it produces clean Markdown that you can paste into an issue, save in a bug folder, or pass to another automation.
 
+## Why Maintainers Use It
+
+Visual bug reports are often hard to triage because screenshots arrive without reproduction context. Screenshot to Issue standardizes that context so maintainers can ask fewer follow-up questions and move faster from report to reproduction.
+
 ## Installation
 
 From source:
@@ -68,6 +72,13 @@ The attached screenshot shows a UI or product issue that needs investigation.
 
 Unknown formats still work; the issue draft just reports dimensions as unknown.
 
+## Maintainer Workflow
+
+1. Ask contributors to attach a generated issue draft when filing UI bugs.
+2. Use `--browser`, `--url`, `--expected`, and `--actual` to capture the triage details reviewers need.
+3. Save drafts beside screenshots during manual QA or release verification.
+4. Pair the generated Markdown with Codex or another automation to suggest labels, reproduction steps, or owner routing.
+
 ## CLI Reference
 
 | Option | Description |
@@ -118,6 +129,10 @@ node bin/screenshot-to-issue.js --help
 ```
 
 Image metadata changes should degrade cleanly for unknown formats and avoid adding native dependencies.
+
+## Codex for OSS Notes
+
+See [docs/codex-for-oss.md](./docs/codex-for-oss.md) for a concise maintainer-oriented project summary and API-credit usage plan.
 
 ## License
 

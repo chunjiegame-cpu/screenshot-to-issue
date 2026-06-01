@@ -1,7 +1,7 @@
 {
   "name": "screenshot-to-issue",
-  "version": "0.1.0",
-  "description": "Create GitHub-ready issue drafts from screenshots and a few optional context flags.",
+  "version": "0.1.1",
+  "description": "Maintainer-focused screenshot issue drafts for faster bug triage.",
   "type": "module",
   "bin": {
     "screenshot-to-issue": "./bin/screenshot-to-issue.js"
@@ -9,7 +9,9 @@
   "files": [
     "bin",
     "src",
+    "docs",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "exports": {
@@ -23,7 +25,10 @@
     "github",
     "issue",
     "bug-report",
-    "cli"
+    "cli",
+    "open-source",
+    "maintainer-tools",
+    "issue-triage"
   ],
   "author": "chunjiegame-cpu",
   "repository": {
