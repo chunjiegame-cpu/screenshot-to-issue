@@ -1,0 +1,41 @@
+{
+  "name": "screenshot-to-issue",
+  "version": "0.1.0",
+  "description": "Create GitHub-ready issue drafts from screenshots and a few optional context flags.",
+  "type": "module",
+  "bin": {
+    "screenshot-to-issue": "./bin/screenshot-to-issue.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "screenshot",
+    "github",
+    "issue",
+    "bug-report",
+    "cli"
+  ],
+  "author": "chunjiegame-cpu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunjiegame-cpu/screenshot-to-issue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chunjiegame-cpu/screenshot-to-issue/issues"
+  },
+  "homepage": "https://github.com/chunjiegame-cpu/screenshot-to-issue#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
